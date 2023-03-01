@@ -32,7 +32,7 @@ public class Result<T> {
      * @return
      */
     public static<T> Result<T> ok(T data){
-        return build(data,200,"成功");
+        return build(data,20000,"成功");
     }
 
     public static<T> Result<T> ok(){
@@ -46,7 +46,7 @@ public class Result<T> {
      * @return
      */
     public static<T> Result<T> fail(T data){
-        return build(data, 201,"失败");
+        return build(data, 20001,"失败");
     }
 
     public static<T> Result<T> fail(){
